@@ -1,11 +1,11 @@
 import requests
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "GROK_API_KEY"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "openai/gpt-oss-120b"
 
 
-def call_groq(messages, temperature=0):
+def call_groq(messages, temperature=1):
     """Core function to handle the HTTP request."""
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
