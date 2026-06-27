@@ -35,6 +35,6 @@ Final Answer: 30.""",
 
 
 # Usage
-API_KEY = "YOUR_GROK_KEY"
+API_KEY = "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"
 user_query = "Find the sum of all even numbers between 1 and 50."
 print(get_chain_of_thought(API_KEY, user_query))

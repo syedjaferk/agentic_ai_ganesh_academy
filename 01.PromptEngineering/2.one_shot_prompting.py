@@ -25,6 +25,6 @@ def get_one_shot(api_key, query):
     return response.json()["choices"][0]["message"]["content"]
 
 
-API_KEY = "YOUR_GROK_KEY"
+API_KEY = "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"
 
 print(get_one_shot(API_KEY, "Give me sum of all even numbers between 1 and 50."))

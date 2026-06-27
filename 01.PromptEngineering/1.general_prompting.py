@@ -1,6 +1,6 @@
 import requests
 
-GROQ_API_KEY = "GROK_API_KEY"
+GROQ_API_KEY = "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"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "openai/gpt-oss-120b"
 
@@ -11,7 +11,7 @@ def call_groq(messages, temperature=1):
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json",
     }
-
+    # Temperature controls the randomness of the model's output - lower values make the output more deterministic
     payload = {"model": MODEL, "messages": messages, "temperature": temperature}
 
     response = requests.post(GROQ_URL, headers=headers, json=payload)
@@ -34,5 +34,5 @@ def get_zero_shot(query):
 
 
 if __name__ == "__main__":
-    response = get_zero_shot("give me some details on python ")
+    response = get_zero_shot("Give me sum of all even numbers between 1 and 50.")
     print(response)

@@ -22,5 +22,5 @@ def get_role_prompt(api_key, query):
 
 
 # Usage
-API_KEY = "YOUR_GROK_KEY"
+API_KEY = "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"
 print(get_role_prompt(API_KEY, "Find the sum of all even numbers between 1 and 50."))

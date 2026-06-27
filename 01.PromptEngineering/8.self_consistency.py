@@ -48,6 +48,6 @@ def solve_with_self_consistency(api_key, query, num_samples=5):
     return f"\nConsistent Answer: {final_answer} (Found in {count}/{num_samples} paths)"
 
 
-API_KEY = "YOUR_GROK_KEY"
+API_KEY = "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"
 question = "Find the sum of all even numbers between 1 and 50."
 print(solve_with_self_consistency(API_KEY, question))

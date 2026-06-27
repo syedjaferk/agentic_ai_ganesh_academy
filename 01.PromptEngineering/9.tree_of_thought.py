@@ -54,7 +54,7 @@ def solve_with_tot(api_key, question):
     return call_groq(final_prompt, api_key)
 
 
-API_KEY = "YOUR_GROK_KEY"
+API_KEY = "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"
 result = solve_with_tot(
     API_KEY, "Find the sum of cube of all numbers between 1 and 50."
 )
